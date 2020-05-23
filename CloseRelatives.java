@@ -11,7 +11,7 @@ import androidx.room.PrimaryKey;
 public class CloseRelative {
 
     @PrimaryKey(autoGenerate = true)
-    @noNull
+    @NonNull
     @ColumnInfo(name= "CloseRelativeId")
     private int mId;
 
@@ -22,7 +22,7 @@ public class CloseRelative {
 
     private String mKinship;
 
-    public closerelatives(@Nullable String mCloseRelativeName, String mKinship, int mScore, String mCreationDate) {
+    public CloseRelative(@Nullable String mCloseRelativeName, String mKinship, int mScore, String mCreationDate) {
         this.mCloseRelativeName = mCloseRelativeName;
         this.mKinship = mKinship;
         this.mScore = mScore;
@@ -74,3 +74,4 @@ public class CloseRelative {
    // private String mKinship;
     private int mScore;
     private String mCreationDate;
+}
